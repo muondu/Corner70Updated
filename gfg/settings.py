@@ -101,15 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
+# Internationalizationheroku config:set DISABLE_COLLECTSTATIC=1
 USE_L10N = True
 
 USE_TZ = True
@@ -126,5 +118,4 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-import django_heroku
-django_heroku.settings(locals())
+
